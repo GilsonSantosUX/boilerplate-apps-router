@@ -1,1 +1,2 @@
-import { screen } from '@testing-library/dom'
+import '@testing-library/dom'
+import 'jest-styled-components'

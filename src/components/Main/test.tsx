@@ -6,9 +6,15 @@ describe('<Main/>', () => {
     // Renderiza o component
     const { container } = render(<Main />)
     //Busca o elemento e verifica a existência
-    expect(screen.getByRole('heading', { name: /react avancado/i }))
+    expect(screen.getByRole('heading', { name: /react avançado/i }))
 
     //gerar snapshot
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  // it('should render the colors correctly', () => {
+  //   const { container } = render(<Main />)
+
+  //   expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
+  // })
 })
